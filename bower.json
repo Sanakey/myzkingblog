@@ -1,0 +1,21 @@
+{
+  "name": "zkingblog",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Sanakey <714737083@qq.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Sanakey/myzkingblog",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

@@ -13,7 +13,7 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
-//设置
+//设置服务器服务的端口号   从环境变量中读取端口号 如果没有就默认使用3000
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 

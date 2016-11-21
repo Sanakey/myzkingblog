@@ -1,9 +1,6 @@
 /**
- * Created by Administrator on 2016/11/17.
+ * Created by xl on 16/11/17.
  */
-
-
-
 var mongoose = require('mongoose');
 var dbconfig = require('../dbconfig.js');
 
@@ -16,7 +13,7 @@ var userSchema = new mongoose.Schema({
   password: String,
   email: {type: String, default: ''},
   avatar: {type: String},
-  createTime:{type:Date,default:new Date().now}
+  createTime:{type:Date,default:Date.now}
 });
 
 var articleSchema = new mongoose.Schema({
@@ -24,7 +21,7 @@ var articleSchema = new mongoose.Schema({
   //user属性是userinfo表的用户id,所以类型应该是ObjectId,为了表现之间的关联关系要使用ref属性
   user: {type:ObjectId,ref:"userinfo"},
   content: String,
-  createTime:{type:Date,default:new Date().now}
+  createTime:{type:Date,default:Date.now}
 });
 
 exports.User = mongoose.model('userinfo', userSchema);
